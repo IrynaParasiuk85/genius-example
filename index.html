@@ -33,14 +33,23 @@
           </ul>
           <!--  -->
         </nav>
-        <button class=" button modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="header__burger menu-btn-open" type="button">
+          <svg class="address-icon" width="24" height="24">
+            <use href="./Images/icon.svg#icon-instagram"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+
+        </div>
       </div>
     </div>
   </header>
   <main>
     <section class="hero-section">
       <div class="container">
-        <h1 class="hero-title"><span class="accent">Сучасна </span>пекарня</h1>
+        <h1 class="hero-title"><span class="text-brand">Сучасна </span>пекарня</h1>
       </div>
     </section>
     <section class="advantages-section">
@@ -53,7 +62,7 @@
         </ul>
       </div>
     </section>
-    <section class="traditions-section section" id="traditions-section">
+    <!--  <section class="traditions-section section" id="traditions-section">
       <div class="container">
         <div class="traditions-container">
           <div class="traditions-content">
@@ -121,6 +130,7 @@
           <ul class="format-list">
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./Images/imgWalrus.jpg" alt="Walrus format" />
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площа: до 120 м2</p>
@@ -132,6 +142,7 @@
             </li>
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./Images/imgHorseshoe.jpg" alt="Horseshoe format" />
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площа: до 25 м2</p>
@@ -143,6 +154,7 @@
             </li>
             <li class="formats-item">
               <article class="format-card">
+                <img class="format-image" src="./Images/imgHandber.jpg" alt="Handlebar format" />
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площа: до 15 м2</p>
@@ -205,16 +217,16 @@
               <img src="./Images/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
           </div>
-          <!-- </html> -->
+          
           <ul class="footer-menu">
             <li><a class="link" href="#traditions-section">Наші традиції</a></li>
             <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
             <li><a class="link" href="#formats-section">Формати</a></li>
             <li><a class="link" href="#contact-section">Контакти</a></li>
           </ul>
-          <!--  -->
+        
         </nav>
-        <!--  -->
+      
         <address class="footer-address">
           <ul class="address-list">
             <li><a class="address-link" href="tel:+380960000007">+380960000007</a></li>
@@ -248,35 +260,35 @@
         </address>
       </div>
     </div>
-  </footer>
-  <div class="backdrop"><!--is-hidden-->
-    <div class="modal">
-      <h2>Замовити дзвінок</h2>
-      <p> Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-      <button class="modal-btn-close" type="button">Close</button>
-      <form name="order-call-form" autocomplete="off">
-        <div class="form-field">
-          <label class="form-label hidden" for="user-name">Ім'я</label>
-          <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я" required />
-        </div>
-        <div class="form-field">
-          <label class="form-label hidden" for="user-tel">Телефон</label>
-          <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
-        </div>
-        <div class="form-field">
-          <label class="form-label hidden" for="user-email">Електрона пошта</label>
-          <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта"
-            required />
-        </div>
-        <button class="form-button button" type="submit" disabled>Замовити дзвінок</button>
-        <p class="form-terms">
-          Натискаючи на кнопку я погоджуюсь з
-          <a class="form-terms-link href=" #">політикою конфіденційності</a>
-        </p>
-      </form>
-    </div>
-  </div>
-  <script src="./js/modal.js"></script>
+  </footer>  
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <h2>Замовити дзвінок</h2>
+        <p> Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <button class="modal-btn-close" type="button">Close</button>
+        <form name="order-call-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label hidden" for="user-name">Ім'я</label>
+            <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label hidden" for="user-tel">Телефон</label>
+            <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required />
+          </div>
+          <div class="form-field">
+            <label class="form-label hidden" for="user-email">Електрона пошта</label>
+            <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Електрона пошта"
+              required />
+          </div>
+          <button class="form-button button" type="submit" disabled>Замовити дзвінок</button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link href=" #">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>  -->
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
